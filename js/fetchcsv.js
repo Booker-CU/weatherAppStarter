@@ -38,7 +38,7 @@ selectElement.addEventListener("change", (e) => {
     const selectedOption = e.target.value;
     const [lat, lon] = selectedOption.split(", ");
 
-    fetch(`http://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`)
+    fetch(`https://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`)
     .then(response => response.json())
     .then(data => {
 
