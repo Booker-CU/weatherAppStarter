@@ -1,0 +1,154 @@
+body,html {
+    height: 100vh;
+    background-color: #0a0a0a;
+    background-image: url("../images/beautifulearthelements.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position-y: 300px;
+    color: rgb(248, 244, 244);
+
+}
+
+body {
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 20% auto 10%;
+
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "section section section section"
+    "footer footer footer footer";
+    ;
+}
+
+header {
+    grid-area: header;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo {
+
+    margin-bottom: 0;
+}
+
+.siteIcon{
+
+    width: 300px;
+}
+
+.site-description {
+
+    font-size: 29px;
+    padding-inline: auto;
+    color:#faf6f6
+}
+
+main {
+
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+
+}
+
+section {
+
+    grid-area: section;
+    display:flex;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    justify-content: center;
+
+}
+
+.section-div {
+
+    justify-content: center;
+}
+
+
+.select-box {
+
+    margin-bottom: 0;
+    margin-top: 3%;
+}
+
+footer {
+
+    grid-area: footer;
+    display:flex;
+    padding-top: 350px;
+    padding-bottom: 1px;
+    justify-content: center;
+
+}
+
+
+.earth-container {
+
+    position: relative;
+}
+
+
+.siteIcon {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.weather-card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    width: auto; /* Set a width for the card */
+}
+
+.weather-card {
+    display: flex; /* Arrange content horizontally */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: .5rem; /* Add some padding */
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #10131be2;
+    min-width: 170px; /* Set a width for the card */
+    min-height: 180px;
+    margin: 10px; /* Add some margin between cards */
+    color:#faf6f6;
+}
+
+
+.weather-card h1 {
+    margin-bottom: 1rem; /* Adjust margin for heading */
+}
+
+.weatherIcon {
+
+    max-width: 50px;  /* Adjust as desired */
+    max-height: 50px; /* Adjust as desired */
+
+}
+
+.weather-title {
+    display:flex;
+    align-items: center;
+    margin-bottom: 0.5rem; /* Adjust margin for title */
+    font-weight: bold; /* Make title bold */
+    font-size: medium;
+    color:#fbea00
+}
+
+.weather-title2 {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem; /* Adjust margin for title */
+    font-weight: bold; /* Make title bold */
+    font-size: larger;
+    color:#fbea00
+
+}
+
